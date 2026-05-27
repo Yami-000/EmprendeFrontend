@@ -46,7 +46,7 @@ export default function Sidebar({ open, conversations, onCreate, onSelect, onClo
         <div className="w-88 rounded-tr-3xl rounded-br-3xl border-r border-white/10 bg-[#07101f]/95 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl h-full flex flex-col text-white">
           <header className="flex items-center justify-between pb-4 border-b border-white/10">
             <div>
-              <h3 className="text-2xl font-semibold tracking-tight text-white">LookFin</h3>
+              <h3 className="text-2xl font-semibold tracking-tight text-white">Emprende</h3>
             </div>
             <button
               onClick={onClose}
@@ -54,7 +54,6 @@ export default function Sidebar({ open, conversations, onCreate, onSelect, onClo
               aria-label="Cerrar sidebar"
               title="Cerrar"
             >
-              ×
             </button>
           </header>
 

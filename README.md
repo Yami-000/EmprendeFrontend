@@ -36,3 +36,11 @@ Flujo:
 1. Inicia sesión desde la pantalla de Login.
 2. Firebase guarda la sesión en el navegador.
 3. El token queda disponible en `localStorage` como `lf_firebase_token` para usarlo luego con el backend.
+
+---
+
+## Documentación del proyecto
+
+Se ha añadido documentación general del proyecto en `../EmprendeBackend/PROJECT_OVERVIEW.mb`. Ese archivo describe la arquitectura completa (backend, frontend, agentes, variables de entorno y pasos de ejecución).
+
+Consulta `../EmprendeBackend/PROJECT_OVERVIEW.mb` para una visión completa y pasos recomendados.

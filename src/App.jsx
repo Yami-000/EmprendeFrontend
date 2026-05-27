@@ -73,7 +73,7 @@ export default function App() {
       } else {
         // create initial conversation with welcome message
         const id = Date.now().toString()
-        const botMsg = { id: Date.now().toString() + '-bot', from: 'bot', text: '¡Hola! Soy LookFin, tu asistente financiero personal. ¿En qué puedo ayudarte hoy?', time: Date.now() }
+        const botMsg = { id: Date.now().toString() + '-bot', from: 'bot', text: '¡Hola! Soy Ecia, y te ayudaré a emprender con ia!. ¿En qué puedo ayudarte hoy?', time: Date.now() }
         const conv = { id, title: 'Bienvenido', messages: [botMsg] }
         setConversations([conv])
         setActiveId(id)
@@ -81,7 +81,7 @@ export default function App() {
     } else {
       // no stored conversations -> create initial one
       const id = Date.now().toString()
-      const botMsg = { id: Date.now().toString() + '-bot', from: 'bot', text: '¡Hola! Soy LookFin, tu asistente financiero personal. ¿En qué puedo ayudarte hoy?', time: Date.now() }
+      const botMsg = { id: Date.now().toString() + '-bot', from: 'bot', text: '¡Hola! Soy Ecia, y te ayudaré a emprender con ia!. ¿En qué puedo ayudarte hoy?', time: Date.now() }
       const conv = { id, title: 'Bienvenido', messages: [botMsg] }
       setConversations([conv])
       setActiveId(id)
@@ -152,7 +152,7 @@ export default function App() {
   if (!authReady) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#050816] text-slate-300">
-        Cargando LookFin...
+        Cargando Emprende...
       </div>
     )
   }

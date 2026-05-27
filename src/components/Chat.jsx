@@ -214,7 +214,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
             {/* Show welcome banner if conversation currently only has the initial bot message */}
             {conversation.messages.length === 1 && conversation.messages[0].from === 'bot' && (
               <div className="text-center">
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Bienvenido a LookFin</h2>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Bienvenido a Emprende</h2>
                 <p className="mt-3 text-lg text-slate-300">Tu compañero inteligente en finanzas personales</p>
               </div>
             )}
@@ -262,7 +262,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
                     <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                     <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
                   </div>
-                  <span className="text-sm text-cyan-300">LookFin está escribiendo...</span>
+                  <span className="text-sm text-cyan-300">Ecia está escribiendo...</span>
                 </div>
               )}
             </div>

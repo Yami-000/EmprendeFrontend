@@ -125,13 +125,13 @@ export default function Login({ onAuthenticated }: LoginProps) {
   const isConfigured = missingFirebaseKeys.length === 0 && Boolean(auth);
 
   const title = useMemo(() => (
-    mode === 'login' ? 'Inicia sesión en LookFin' : 'Crea tu cuenta en LookFin'
+    mode === 'login' ? 'Inicia sesión en Emprende' : 'Crea tu cuenta en Emprende'
   ), [mode]);
 
   const subtitle = useMemo(() => (
     mode === 'login'
       ? 'Usa tu correo y contraseña de Firebase Authentication para entrar a la app web.'
-      : 'Registra una nueva cuenta con Firebase Auth y empieza a usar LookFin.'
+      : 'Registra una nueva cuenta con Firebase Auth y empieza a usar Emprende.'
   ), [mode]);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -210,7 +210,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
         <div className="grid w-full gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <section className="flex flex-col justify-center">
             <span className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-cyan-200">
-              LookFin
+              Emprende
             </span>
             <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Un acceso limpio y seguro para tu chat financiero.
@@ -294,7 +294,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                   disabled={loading || !isConfigured}
                   className="flex w-full items-center justify-center rounded-2xl bg-linear-to-r from-cyan-500 to-indigo-600 px-4 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  {loading ? 'Procesando...' : mode === 'login' ? 'Entrar a LookFin' : 'Crear cuenta'}
+                  {loading ? 'Procesando...' : mode === 'login' ? 'Entrar a Emprende' : 'Crear cuenta'}
                 </button>
               </form>
 
