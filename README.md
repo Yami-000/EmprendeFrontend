@@ -1,4 +1,4 @@
-# LookFin ImpactLab - Chat (Vite + React)
+# Emprende - Chat (Vite + React)
 
 Proyecto inicial con Vite + React + TypeScript. Contiene un chat simple, un sidebar de conversaciones y un modal para editar el perfil. El bot responde siempre con un mensaje fijo (eco).
 
@@ -22,7 +22,7 @@ Los datos se persisten en localStorage (conversaciones y perfil).
 
 El login del frontend usa Firebase Authentication con correo y contraseña.
 
-Variables requeridas en `Frontend-LookFin-ImpactLab/.env`:
+Variables requeridas en `EmprendeFrontend/.env`:
 
 - `VITE_FIREBASE_API_KEY`
 - `VITE_FIREBASE_AUTH_DOMAIN`
