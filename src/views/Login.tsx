@@ -203,13 +203,13 @@ export default function Login({ onAuthenticated }: LoginProps) {
   };
 
   return (
-    <main className="min-h-screen relative overflow-hidden bg-[#050816] text-[#e9f1ff]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,70,229,0.28),transparent_35%),radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_30%),linear-gradient(180deg,#060b18_0%,#050816_100%)]" />
+    <main className="min-h-screen relative overflow-hidden bg-[#0a1810] text-[#e9f1ff]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(12,209,56,0.28),transparent_35%),radial-gradient(circle_at_top_right,rgba(95,221,122,0.18),transparent_30%),linear-gradient(180deg,#0a1810_0%,#0a1810_100%)]" />
       <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[48px_48px]" />
       <div className="relative mx-auto flex min-h-screen max-w-6xl items-center px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid w-full gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <section className="flex flex-col justify-center">
-            <span className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-cyan-200">
+            <span className="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-[#0CD138]/20 bg-[#0CD138]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#7fe88c]">
               Emprende
             </span>
             <h1 className="max-w-xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -236,7 +236,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
           <section className="flex items-center justify-center">
             <div className="w-full max-w-md rounded-3xl border border-white/10 bg-[#0b1224]/80 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
               <div className="mb-6">
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-300/80">Acceso</p>
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#5fdd7a]/80">Acceso</p>
                 <h2 className="mt-2 text-2xl font-semibold text-white">{title}</h2>
                 <p className="mt-2 text-sm leading-6 text-slate-400">{subtitle}</p>
               </div>
@@ -256,7 +256,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                       value={name}
                       onChange={(event) => setName(event.target.value)}
                       placeholder="Tu nombre"
-                      className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20"
+                      className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-[#0CD138]/50 focus:ring-2 focus:ring-[#0CD138]/20"
                     />
                   </label>
                 )}
@@ -268,7 +268,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}
                     placeholder="correo@ejemplo.com"
-                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20"
+                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-[#0CD138]/50 focus:ring-2 focus:ring-[#0CD138]/20"
                   />
                 </label>
 
@@ -279,7 +279,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                     value={password}
                     onChange={(event) => setPassword(event.target.value)}
                     placeholder="••••••••"
-                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20"
+                    className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-slate-500 focus:border-[#0CD138]/50 focus:ring-2 focus:ring-[#0CD138]/20"
                   />
                 </label>
 
@@ -292,7 +292,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                 <button
                   type="submit"
                   disabled={loading || !isConfigured}
-                  className="flex w-full items-center justify-center rounded-2xl bg-linear-to-r from-cyan-500 to-indigo-600 px-4 py-3.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+                  className="flex w-full items-center justify-center rounded-2xl bg-linear-to-r from-[#0CD138] to-[#06a321] px-4 py-3.5 text-sm font-semibold text-white shadow-lg shadow-green-500/20 transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {loading ? 'Procesando...' : mode === 'login' ? 'Entrar a Emprende' : 'Crear cuenta'}
                 </button>
@@ -304,7 +304,7 @@ export default function Login({ onAuthenticated }: LoginProps) {
                   setError('');
                   setMode(mode === 'login' ? 'register' : 'login');
                 }}
-                className="mt-4 w-full text-sm font-medium text-cyan-300 transition hover:text-cyan-200"
+                className="mt-4 w-full text-sm font-medium text-[#5fdd7a] transition hover:text-[#7fe88c]"
               >
                 {mode === 'login' ? 'No tengo cuenta, quiero crear una' : 'Ya tengo cuenta, quiero iniciar sesión'}
               </button>

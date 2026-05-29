@@ -151,7 +151,7 @@ export default function App() {
 
   if (!authReady) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#050816] text-slate-300">
+      <div className="min-h-screen flex items-center justify-center bg-[#0a1810] text-slate-300">
         Cargando Emprende...
       </div>
     )
@@ -162,7 +162,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#050816]">
+    <div className="min-h-screen flex flex-col bg-[#0a1810]">
       <Header
         onMenu={() => setSidebarOpen((s) => !s)}
         onProfile={() => setProfileOpen(true)}

@@ -43,7 +43,7 @@ export default function Sidebar({ open, conversations, onCreate, onSelect, onClo
     <>
       {open && <div className="fixed inset-0 bg-black/40 z-20" onClick={onClose} />}
       <aside className={`z-30 left-0 top-0 bottom-0 w-88 transform ${open ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-200 fixed`}>
-        <div className="w-88 rounded-tr-3xl rounded-br-3xl border-r border-white/10 bg-[#07101f]/95 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl h-full flex flex-col text-white">
+        <div className="w-88 rounded-tr-3xl rounded-br-3xl border-r border-white/10 bg-[#0a1810]/95 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl h-full flex flex-col text-white">
           <header className="flex items-center justify-between pb-4 border-b border-white/10">
             <div>
               <h3 className="text-2xl font-semibold tracking-tight text-white">Emprende</h3>
@@ -69,7 +69,7 @@ export default function Sidebar({ open, conversations, onCreate, onSelect, onClo
                       className="group flex w-24 flex-col items-center gap-2 text-center"
                       title={problem}
                     >
-                      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#155DFC] text-lg font-semibold text-white shadow-lg shadow-cyan-500/20 transition group-hover:scale-105 group-hover:brightness-110">
+                      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#0CD138] text-lg font-semibold text-white shadow-lg shadow-green-500/20 transition group-hover:scale-105 group-hover:brightness-110">
                         {index + 1}
                       </span>
                       <span className="text-xs font-medium leading-tight text-white/90">
@@ -110,7 +110,7 @@ export default function Sidebar({ open, conversations, onCreate, onSelect, onClo
 
           <footer className="pt-4 border-t border-white/10">
             <button
-              className="w-full rounded-2xl bg-[#155DFC] px-4 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20 transition hover:brightness-110"
+              className="w-full rounded-2xl bg-[#0CD138] px-4 py-3 font-semibold text-white shadow-lg shadow-green-500/20 transition hover:brightness-110"
               onClick={onCreate}
             >
               Nueva conversación

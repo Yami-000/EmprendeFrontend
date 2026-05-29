@@ -221,7 +221,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
 
             <div className="w-full">
               {conversation.messages.map((m) => (
-                <div key={m.id} className={`max-w-[60%] p-4 rounded-xl my-4 ${m.from === 'user' ? 'bg-indigo-700 ml-auto text-white' : 'bg-white/5 text-white'}`}>
+                <div key={m.id} className={`max-w-[60%] p-4 rounded-xl my-4 ${m.from === 'user' ? 'bg-[#0CD138] ml-auto text-white' : 'bg-white/5 text-white'}`}>
                   <div className="text-sm prose prose-invert max-w-none">
                     <ReactMarkdown
                       components={{
@@ -233,8 +233,8 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
                         pre: ({ children }) => <pre className="bg-black/30 p-2 rounded mb-2 overflow-x-auto">{children}</pre>,
                         strong: ({ children }) => <strong className="font-bold">{children}</strong>,
                         em: ({ children }) => <em className="italic">{children}</em>,
-                        a: ({ children, href }) => <a href={href} target="_blank" rel="noopener noreferrer" className="text-cyan-300 underline">{children}</a>,
-                        blockquote: ({ children }) => <blockquote className="border-l-4 border-cyan-400 pl-4 italic my-2">{children}</blockquote>,
+                        a: ({ children, href }) => <a href={href} target="_blank" rel="noopener noreferrer" className="text-[#5fdd7a] underline">{children}</a>,
+                        blockquote: ({ children }) => <blockquote className="border-l-4 border-[#0CD138] pl-4 italic my-2">{children}</blockquote>,
                       }}
                     >
                       {m.text}
@@ -246,7 +246,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
                         href={m.archivoAdjuntoURL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs text-cyan-300 underline break-all"
+                        className="text-xs text-[#5fdd7a] underline break-all"
                       >
                         Ver archivo adjunto
                       </a>
@@ -258,11 +258,11 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
               {processingIA && (
                 <div className="max-w-[60%] p-4 rounded-xl my-4 bg-white/5 text-white flex items-center gap-2">
                   <div className="flex gap-1">
-                    <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-                    <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                    <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                    <div className="w-2 h-2 bg-[#0CD138] rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+                    <div className="w-2 h-2 bg-[#0CD138] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    <div className="w-2 h-2 bg-[#0CD138] rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
                   </div>
-                  <span className="text-sm text-cyan-300">Ecia está escribiendo...</span>
+                  <span className="text-sm text-[#5fdd7a]">Ecia está escribiendo...</span>
                 </div>
               )}
             </div>
@@ -270,7 +270,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
         </div>
       )}
 
-      <div className="p-6 border-t border-white/5 bg-[#050816]/40 backdrop-blur-sm">
+      <div className="p-6 border-t border-white/5 bg-[#0a1810]/40 backdrop-blur-sm">
         {selectedFile && (
           <div className="flex items-center gap-2 bg-white/10 p-2 rounded text-sm">
             <span className="flex-1 text-white/80">📎 {selectedFile.name}</span>
@@ -301,7 +301,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
           <button
             onClick={() => fileInputRef.current?.click()}
             disabled={uploading || processingIA}
-            className="mr-3 px-4 py-3 rounded-2xl bg-[#155DFC] text-white shadow-lg shadow-cyan-500/20 hover:brightness-200 transition disabled:opacity-50"
+            className="mr-3 px-4 py-3 rounded-2xl bg-[#0CD138] text-white shadow-lg shadow-green-500/20 hover:brightness-200 transition disabled:opacity-50"
             title="Adjuntar archivo"
           >
             <svg
@@ -333,7 +333,7 @@ export default function Chat({ conversation, onCreateConversation, onUpdateConve
           />
           {/* Botón de enviar mensaje */}
           <button
-            className="ml-3 px-4 py-3 rounded-2xl bg-[#155DFC] text-white shadow-lg shadow-cyan-500/20 hover:brightness-200 transition disabled:opacity-50"
+            className="ml-3 px-4 py-3 rounded-2xl bg-[#0CD138] text-white shadow-lg shadow-green-500/20 hover:brightness-200 transition disabled:opacity-50"
             onClick={send}
             disabled={uploading || processingIA}
             aria-label="Enviar"
